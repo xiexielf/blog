@@ -1,0 +1,67 @@
+<!--review-->
+<% if(user){ %>
+<form class="form-horizontal" action="/users/review" method="post">
+	<div class="review-title form-group" style="height: 0;overflow: hidden;">
+		<label for="" class="col-sm-2 control-label">评论标题：</label>
+		<div class="col-sm-10">
+			<input type="text" name="idPath" class="form-control" id="" placeholder="标题" />
+		</div>
+	</div>
+	<div class="review-title form-group">
+		<div class="col-sm-2 control-label">
+			<label for="reviewTit" class="">评论标题：</label>
+		</div>
+		<div class="col-sm-10">
+			<input type="text" name="title" class="form-control" id="reviewTit" placeholder="评论标题" />
+		</div>
+	</div>
+	<div class="review-content form-group">
+		<div class="col-sm-2 control-label">
+			<label for="reviewCon" class="">评论内容：</label>
+		</div>
+		<div class="col-sm-10">
+			<textarea name="content" class="form-control" rows="10" cols="" placeholder="评论内容" id="reviewCon"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<input type="submit" class="btn btn-success for" id="" name="" value="提交"/>
+		</div>
+	</div>
+</form>
+<% }else{ %>
+<div class="review-remind">
+	<p>温馨提示：请您在<a href="/login">登录/注册</a>后再使用评论功能，谢谢合作！！</p>
+</div>	
+<% } %>
+<hr />
+<div class="reviewList">
+	<ul class="list-group">
+	<% if(result.length>0){ %>
+		<% result.forEach(function(item,i){ %>
+			<li class="list-group-item">
+				<div class="col-sm-3 review-author">
+					<p>用户：<%- item.author %></p>
+				</div>
+				<div class="col=sm-9">
+					<p class="col-sm-offset-3 review-title"><%- item.title %></p>
+					<p class="col-sm-offset-3 review-content"><%- item.content %></p>
+					<p class="col-sm-offset-3 text-right review-time">评论时间：<%- item.time %></p>
+				</div>
+			</li>
+			<% if(i<result.length-1){ %>
+			<hr />
+			<% } %>			
+		<% }) %>
+	<% }else{ %>
+	<li class="list-group-item">暂无任何评论</li>
+	<% } %>
+	</ul>
+	
+</div>
+<!--<script type="text/javascript">
+	var url=require('url');
+	var urlpath=url.parse(req.url).pathname.replace(/\//,'');
+	
+</script>-->
+<!--review-结束-->

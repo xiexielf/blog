@@ -1,0 +1,33 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: url(../images/login_bg.jpg) no-repeat center top;
+	background-size: 100%;
+}
+
+.login-register{
+	position: fixed;
+	background: rgba(200,200,200,.5);
+	border: 4px double #DFF0D8;
+	border-radius: 10px;
+	width: 400px;
+	padding: 40px 60px;
+	margin: -200px 0 0 -200px;
+	top: 50%;
+	left: 50%;
+}
+.loginRegForm>input{
+	margin-bottom: 20px;
+}
+.loginRegTitle{
+	text-align: center;
+}
+.skip p{
+	margin-top: 20px;
+}
+.skip p>a{
+	display: inline-block;
+	margin: 0 5px;
+}

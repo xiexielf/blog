@@ -1,0 +1,94 @@
+<div class="col-sm-9 blog-main">
+	<% if(result.length>0){ %>
+		<% result.forEach(function(item,i){ %>
+		<div class="blog-post">
+			<h3 class="blog-post-title"><%- item.title %></h3>
+			<p class="blog-post-meta">
+				<time><%- item.time %></time>
+				<a href="/about"><%- item.author %></a>
+			</p>
+			<p><%- item.content %></p>
+			<hr />
+			<p><button class="btn btn-danger" onclick="location.href='/<%- item.path %>'">阅读全文</button></p>
+		</div>
+		<% }) %>
+	<% }else{ %>
+		<div class="blog-post">
+			<p>还没有任何文章，赶快去发表一篇吧！！</p>
+		</div>
+	<% } %>
+	<!--<div class="blog-post">
+		<h3 class="blog-post-title">如果要学习web前端开发，需要学习什么？</h3>
+		<p class="blog-post-meta">
+			<time>2017-06-10</time>
+			<a href="/about">谢利豪</a>
+		</p>
+		<p>遇到很多新手，都会问，如果要学习web前端开发，需要学习什么？难不难？多久能入门？怎么能快速建一个网站？工资能拿到多少？还有些让我推荐一些培训机构什么的要去学习。我建议是自学，实在是觉得自己没有这个能力，确实是需要一个老师的话，那你还是自己做主找个老师吧！</p>
+		<hr />
+		<p><button class="btn btn-danger" onclick="location.href='/article-one'">阅读全文</button></p>
+	</div>-->
+	<!-- /.blog-post -->
+	<!--<div class="blog-post">
+		<h3 class="blog-post-title">微不足道的坚持</h3>
+		<p class="blog-post-meta">
+			<time>2017-05-09</time>
+			<a href="/about">谢利豪</a>
+		</p>
+		<p>在你最擅长的专业领域内，可曾有过一件让你骄傲，持续坚持下来的事情？每当别人谈论它时，你总是偷偷窃喜？我曾经这样勉励我的弟兄们，在满负荷的工作压力面前，总要找到一件有意义、自己感兴趣且擅长的事情，坚持做，是一种解压，更是为了让自己的专业所长，找到有意义的落脚点。</p>
+		<hr />
+		<p><button class="btn btn-danger" onclick="location.href='/article-two'">阅读全文</button></p>
+	</div>
+	<div class="blog-post">
+		<h3 class="blog-post-title">jQuery参考手册主要API</h3>
+		<p class="blog-post-meta">
+			<time>2017-04-26</time>
+			<a href="/about">谢利豪</a>
+		</p>
+		<p>本文整理了一些主要的jQuery API，其中包括jQuery 核心函数和方法、jQuery属性参考手册、jQuery CSS操作、jQuery选择器、jQuery文档操作、jQuery筛选操作、jQuery事件方法、jQuery效果、jQuery Ajax操作、jQuery工具函数、jQuery事件对象、jQuery延迟对象、jQuery回调函数，欢迎收藏使用，本手册会持续更新。</p>
+		<hr />
+		<p><button class="btn btn-danger" onclick="location.href='/article-three'">阅读全文</button></p>
+	</div>
+	<div class="blog-post">
+		<h3 class="blog-post-title">CSS多行文字超出隐藏加省略号</h3>
+		<p class="blog-post-meta">
+			<time>2017-03-09</time>
+			<a href="/about">谢利豪</a>
+		</p>
+		<p>本文通过两个思路介绍了纯CSS实现多行内容超出时加省略号的代码，一种是支持webkit的浏览器，使用CSS3属性-webkit-line-clamp来限制行数，一种是通过加了一个绝对定位的伪元素来伪造一个省略号放在文字的最后面。常用第二种，兼容性较好。</p>
+		<hr />
+		<p><button class="btn btn-danger" onclick="location.href='/article-four'">阅读全文</button></p>
+	</div>
+	<div class="blog-post">
+		<h3 class="blog-post-title">中文正则表达式匹配-正则中文匹配</h3>
+		<p class="blog-post-meta">
+			<time>2017-02-04</time>
+			<a href="/about">谢利豪</a>
+		</p>
+		<p>这篇文章主要讲如何使用正则匹配中文字符，中文正则表达式的匹配规则不像其他正则规则一样容易记住，下面一起看看这个中文正则表达式是怎么样的。</p>
+		<hr />
+		<p><button class="btn btn-danger" onclick="location.href='/article-five'">阅读全文</button></p>
+	</div>
+	<div class="blog-post">
+		<h3 class="blog-post-title">JavaScript常用DOM操作方法和函数</h3>
+		<p class="blog-post-meta">
+			<time>2017-01-20</time>
+			<a href="/about">谢利豪</a>
+		</p>
+
+		<p>本文分享了一些JavaScript常用的代码，有DOM操作、CSS操作、对象（Object对象、Array对象、Number对象、String对象、Math对象、JSON对象和Console对象）操作，值得收藏。</p>
+		<hr />
+		<p><button class="btn btn-danger" onclick="location.href='/article-six'">阅读全文</button></p>
+	</div>-->
+	<!-- /.blog-post -->
+	<!--<nav>
+		<ul class="pager">
+			<li>
+				<a href="#">上一页</a>
+			</li>
+			<li>
+				<a href="#">下一页</a>
+			</li>
+		</ul>
+	</nav>-->
+
+</div>

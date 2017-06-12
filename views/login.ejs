@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>博客登录</title>
+		<link rel='stylesheet' href='/stylesheets/bootstrap.min.css' />
+		<link rel='stylesheet' href='/stylesheets/login-register.css' />
+	</head>
+
+	<body>
+		<div class="login-register">
+			<form class="form-signin loginRegForm" action="/users/login" method="post">
+				<h2 class="form-signin-heading loginRegTitle">登录</h2>
+				<label for="inputUsername" class="sr-only">用户名</label>
+				<input type="text" id="inputUsername" name="Username" class="form-control" placeholder="请输入用户名" required autofocus>
+				<label for="inputPassword" class="sr-only">密码</label>
+				<input type="password" name="Password" id="inputPassword" class="form-control" placeholder="请输入密码" required>
+				<!--<div class="checkbox">
+					<label>
+            <input type="checkbox" value="remember-me"> Remember me
+          </label>
+				</div>-->
+				<button class="btn btn-lg btn-primary btn-block" type="submit">登　录</button>
+			</form>
+			<div class="skip">
+				<p class="text-right">没有账号？点击<a href="/register">注册</a></p>
+			</div>
+
+		</div>
+	</body>
+
+</html>

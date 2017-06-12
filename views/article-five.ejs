@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>中文正则表达式匹配-正则中文匹配</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	</head>
+
+	<body>
+		<%- include('header.ejs') %>
+		<div class="container">
+			<div class="row">
+				<!--asider-->
+				<%- include('asider.ejs') %>
+				<!--article-->
+				<div class="col-sm-9 blog-main">
+					<article class="blog-post">
+						<h3 class="blog-post-title">中文正则表达式匹配-正则中文匹配</h3>
+						<p class="blog-post-meta">2017-02-04
+							<a href="/about">谢利豪</a>
+						</p>
+						<hr />
+						
+						
+					</article>
+					<!--review-->
+					<div class="blog-review">
+						<%- include('review.ejs') %>
+					</div>
+				</div>
+				<!-- /.blog-main -->
+			</div>
+		</div>
+		<%- include('footer.ejs') %>
+	</body>
+
+</html>

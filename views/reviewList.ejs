@@ -1,0 +1,27 @@
+<!--reviewList-->
+<% if(user){ %>
+<form class="blog-review form-horizontal">
+	<div class="review-title form-group">
+		<label for="" class="col-sm-2 control-label">评论标题：</label>
+		<div class="col-sm-10">
+			<input type="text" name="title" class="form-control" id="" placeholder="标题" />
+		</div>
+	</div>
+	<div class="review-content form-group">
+		<label for="" class="col-sm-2 control-label">评论内容：</label>
+		<div class="col-sm-10">
+			<textarea name="content" class="form-control" rows="10" cols=""></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<input type="submit" class="btn btn-success for" id="" name="" value="提交"/>
+		</div>
+	</div>
+</form>
+<% }else{ %>
+<div class="blog-review">
+	<p>温馨提示：请您在<a href="/login">登录/注册</a>后再使用评论功能，谢谢合作！！</p>
+</div>	
+<% } %>
+<!--reviewList-结束-->

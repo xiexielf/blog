@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>jQuery参考手册主要API</title>
+		<link rel="stylesheet" type="text/css" href="/stylesheets/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="/stylesheets/style.css" />
+	</head>
+
+	<body>
+		<%- include('header.ejs') %>
+		<div class="container">
+			<div class="row">
+				<!--asider-->
+				<%- include('asider.ejs') %>
+				<!--article-->
+				<div class="col-sm-9 blog-main">
+					<article class="blog-post">
+						<h3 class="blog-post-title">jQuery参考手册主要API</h3>
+						<p class="blog-post-meta">2017-04-26
+							<a href="/about">谢利豪</a>
+						</p>
+						<hr />
+						<p>本文整理了一些主要的jQuery API，其中包括jQuery 核心函数和方法、jQuery属性参考手册、jQuery CSS操作、jQuery选择器、jQuery文档操作、jQuery筛选操作、jQuery事件方法、jQuery效果、jQuery Ajax操作、jQuery工具函数、jQuery事件对象、jQuery延迟对象、jQuery回调函数，欢迎收藏使用，本手册会持续更新。</p>
+						<h4>jquery核心函数</h4>
+						<table class=".table-striped" border="" cellspacing="" cellpadding="">
+							<tr>
+								<th>函数</th>
+								<th>描述</th>
+							</tr>
+							<tr>
+								<td>jQuery()</td>
+								<td> 这个函数接收一个包含 CSS 选择器的字符串，然后用这个字符串去匹配一组元素。</td>
+							</tr>
+							<tr>
+								<td>jQuery()1.8*</td>
+								<td>根据提供的原始 HTML 标记字符串，动态创建由 jQuery 对象包装的 DOM 元素。同时设置一系列的属性、事件等。</td>
+							</tr>
+							<tr>
+								<td>jQuery()</td>
+								<td>$(document).ready()的简写。</td>
+							</tr>
+							<tr>
+								<td>jQuery.holdReady()1.6+</td>
+								<td> 暂停或恢复.ready() 事件的执行。</td>
+							</tr>
+							<tr>
+								<td>each()</td>
+								<td>以每一个匹配的元素作为上下文来执行一个函数。</td>
+							</tr>
+							<tr>
+								<td>size()</td>
+								<td> jQuery 对象中元素的个数。</td>
+							</tr>
+							<tr>
+								<td>length</td>
+								<td> jQuery 对象中元素的个数。</td>
+							</tr>
+							<tr>
+								<td>selector</td>
+								<td> 返回传给jQuery()的原始选择器。</td>
+							</tr>
+							<tr>
+								<td>context</td>
+								<td> 返回传给jQuery()的原始的DOM节点内容，即jQuery()的第二个参数。如果没有指定，那么context指向当前的文档(document)。</td>
+							</tr>
+							<tr>
+								<td>get()</td>
+								<td> 取得其中一个匹配的元素。 num表示取得第几个匹配的元素。</td>
+							</tr>
+							<tr>
+								<td>index()</td>
+								<td> 搜索匹配的元素，并返回相应元素的索引值，从0开始计数。</td>
+							</tr>
+							<tr>
+								<td>data()</td>
+								<td> 在元素上存放数据,返回jQuery对象。</td>
+							</tr>
+							<tr>
+								<td>removeData()1.7*</td>
+								<td> 在元素上移除存放的数据</td>
+							</tr>
+							<tr>
+								<td>queue()</td>
+								<td> 显示或操作在匹配元素上执行的函数队列</td>
+							</tr>
+							<tr>
+								<td>dequeue()</td>
+								<td> 从队列最前端移除一个队列函数，并执行他。</td>
+							</tr>
+							<tr>
+								<td>clearQueue()</td>
+								<td> 清空对象上尚未执行的所有队列</td>
+							</tr>
+							<tr>
+								<td>jQuery.fn.extend()</td>
+								<td> 扩展 jQuery 元素集来提供新的方法（通常用来制作插件）。</td>
+							</tr>
+							<tr>
+								<td>jQuery.extend()</td>
+								<td> 扩展jQuery对象本身。</td>
+							</tr>
+							<tr>
+								<td>jQuery.noConflict()</td>
+								<td> 运行这个函数将变量$的控制权让渡给第一个实现它的那个库。</td>
+							</tr>
+
+						</table>
+						<hr />
+						<p>原文地址：<a href="http://caibaojian.com/jquery-core-api.html">http://caibaojian.com/jquery-core-api.html</a></p>
+					</article>
+					<!--review-->
+					<div class="blog-review">
+						<%- include('review.ejs') %>
+					</div>
+				</div>
+				<!-- /.blog-main -->
+			</div>
+		</div>
+		<%- include('footer.ejs') %>
+	</body>
+
+</html>
